@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<title>we are happly</title>
+	<link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+	<div class="contain1">
+		<span>
+			<p>第<span id="level">1</span>关</p>
+			<p>HP: <span id="pra_HP"><img src="xueliang.png" alt="" id="HP"></span></p>
+			<p>Time:<progress value="100" max="100" id="pre"></progress></p>
+		</span>
+	</div>
+	<center>
+		<span>
+			<div id="main"></div>
+			<button id="start">开始</button>
+		</span>
+	</center>
+	<div id="gameover">
+		<div class="contain">
+			<p>恭喜你通过了<span id="go_level"></span>关！</p>
+			<p>GAME OVER!</p>
+			<a href="javascript:game.reset()">再来一次</a>
+		</div>
+	</div>
+	<script src="game.js"></script>
+</body>
+
+</html>
